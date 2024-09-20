@@ -1,0 +1,176 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ff5e5e;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .login-btn, .signup-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ff5e5e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.signup-btn {
+    background-color: #f56b2a;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.location-btn {
+    padding: 1rem 2rem;
+    background-color: #ff5e5e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.location-btn:hover {
+    background-color: #f56b2a;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+/* Logo Styling */
+.logo img {
+    width: 50px; /* Adjust the size based on your logo dimensions */
+    height: auto; /* Keeps the aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Adjust Navbar Layout if Needed */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+/* Style for the login form */
+.login-form {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Space around content */
+    border: 2px solid #ff6347; /* Red border */
+    border-radius: 8px; /* Rounded corners */
+    width: 300px; /* Fixed width */
+    margin: 50px auto; /* Centered horizontally and spaced from top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+    display: none; /* Initially hidden */
+}
+
+/* Style for inputs */
+.login-form input {
+    width: 90%; /* Responsive width */
+    padding: 10px; /* Space inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light grey border */
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+/* Focus effect for inputs */
+.login-form input:focus {
+    border: 1px solid #ff6347; /* Red border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Style for login button */
+.login-form button {
+    padding: 10px 20px; /* Space inside button */
+    background-color: #ff6347; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+.login-form button:hover {
+    background-color: #ff4500; /* Darker red on hover */
+}
+
+/* Style for login message */
+#loginMessage {
+    margin-top: 10px; /* Space above message */
+    font-weight: bold; /* Bold text */
+}
+

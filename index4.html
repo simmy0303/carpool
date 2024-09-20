@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT CARPOOLING WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/VIPOOL LOGO.png" alt="Spicy Connections Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login-btn" onclick="showLoginForm()">Login</button>
+            <!-- Login Form -->
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+    <!-- Login Form (Initially hidden) -->
+    <div class="login-form" id="loginForm" style="display:none;">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Big Logo -->
+            <div class="big-logo">
+                <img src="assets/VIPOOL LOGO LIGHT.png" alt="Spicy Connections Logo">
+            </div>
+            <h1>Find Connections Right Where You Are 🔥</h1>
+            <p>Meet people nearby and make sparks fly. Set your location and let's make it happen!</p>
+            <button class="location-btn" onclick="getLocation()">Share Your Location 🌍</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VIPOOL. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
