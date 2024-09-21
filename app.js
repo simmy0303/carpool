@@ -12,7 +12,7 @@ function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('http://localhost:5000/login', {
+    fetch('http://localhost:5001/login', { // Update to your port
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -28,6 +28,7 @@ function login() {
         document.getElementById('loginMessage').innerText = 'Error logging in.';
     });
 }
+
 
 
 function getLocation() {
