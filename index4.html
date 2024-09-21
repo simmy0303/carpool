@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="VIPOOL LOGO.png" alt="Spicy Connections Logo">
+            <img src="assets/VIPOOL LOGO.png" alt="VIPOOL Logo">
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -29,7 +29,7 @@
         <h2>Login</h2>
         <input type="text" id="username" placeholder="Enter your username" required>
         <input type="password" id="password" placeholder="Enter your password" required>
-        <button onclick="login()">Login</button>
+        <a href ="pickup-drop-location.html">><button onclick="login()">Login</button></a
         <p id="loginMessage"></p>
     </div>
 
@@ -39,11 +39,38 @@
         <div class="hero-content">
             <!-- Big Logo -->
             <div class="big-logo">
-                <img src="VIPOOL LOGO LIGHT.png" alt="Spicy Connections Logo">
+                <img src="assets/VIPOOL LOGO LIGHT.png" alt="VIPOOL Logo">
             </div>
-            <h1>Find Connections Right Where You Are 🔥</h1>
-            <p>Meet people nearby and make sparks fly. Set your location and let's make it happen!</p>
+            <h1>Find Carpool Matches Near You 🚗</h1>
+            <p>Share your location and connect with others heading in the same direction.</p>
             <button class="location-btn" onclick="getLocation()">Share Your Location 🌍</button>
+        </div>
+        <div class="scroll-down"></div>
+            <a href="#explore"><i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore-section">
+        <div class="container">
+            <h2>Explore Carpooling Options</h2>
+            <p>Discover people near you with similar routes. Save on costs and reduce your carbon footprint!</p>
+            <button class="explore-btn">Start Exploring</button>
+        </div>
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches" class="matches-section">
+        <div class="container">
+            <h2>Find Your Matches</h2>
+            <p>See who is nearby and going your way.</p>
+        </div>
+    </section>
+       <!-- Profile Section -->
+       <section id="profile" class="profile-section">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <p>Update your info and manage your rides.</p>
         </div>
     </section>
 
