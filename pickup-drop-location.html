@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup & Drop Location</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Big Logo -->
+    <div class="big-logo">
+        <img src="assets/VIPOOL LOGO LIGHT.png" alt="Spicy Connections Logo">
+    </div>
+    <!-- Pickup and Drop Location Form -->
+    <div class="location-form">
+        <h2>Enter Your Pickup and Drop-off Location</h2>
+        <form id="locationForm">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+            
+            <label for="drop">Drop-off Location:</label>
+            <input type="text" id="drop" name="drop" placeholder="Enter drop-off location" required>
+
+            <label for="pickupTime">Pickup Time:</label>
+            <input type="text" id="pickupTime" name="pickupTime" placeholder="Enter Pickup Time" required>
+            
+            <label for="passengers">Number of Passengers:</label>
+            <input type="text" id="passengers" name="passengers" placeholder="Number of Passengers" required>
+
+            <!-- Next button to submit the form -->
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('locationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Perform any necessary actions with form data here
+            // For example, you might want to save the data or validate it
+            
+            // Redirect to the new webpage
+            window.location.href = 'Available_carpoolers.html'; // Replace with your desired URL
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting for Confirmation</title>
+    <link rel="stylesheet" href="styles4.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #786969;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Carpooling Service</h1>
+    <button id="confirmButton">Confirm Booking</button>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>Waiting for Confirmation...</h2>
+        <p>Please wait while we process your request.</p>
+    </div>
+
+    <script>
+        document.getElementById('confirmButton').addEventListener('click', function() {
+            // Show the popup
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+
+            // Simulate a wait time (e.g., 3 seconds)
+            setTimeout(function() {
+                // Redirect to the payment portal
+                window.location.href = 'payment-portal-url.html'; // Replace with your payment portal URL
+            }, 1500); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+
+</body>
+</html>

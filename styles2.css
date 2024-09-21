@@ -1,0 +1,65 @@
+/* Style for the Pickup and Drop Location form */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+}
+
+.location-form {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff5e5e; /* Red shadow for effect */
+    background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent dark background */
+}
+
+.location-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Larger font size */
+    color: #ff5e5e; /* Bright pink color */
+}
+
+.location-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff; /* White text */
+}
+
+.location-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #953939; /* Pink border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    color: #fff; /* White text for inputs */
+}
+
+.location-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #953939; /* Bright pink background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.location-form button:hover {
+    background-color: #ff5e5e; /* Lighter pink on hover */
+}
+.big-logo{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    height: 20vh; /* Optional: full height for vertical centering */
+}
+
+img {
+    max-width: 100%; /* Optional: make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
